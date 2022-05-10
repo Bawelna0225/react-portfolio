@@ -1,0 +1,39 @@
+.about {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #1b1b1b;
+  display: flex;
+}
+.about .left {
+  width: 50%;
+  width: 50%;
+  display: flex;
+  padding-inline: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.about .left .title {
+  font-size: 3rem;
+  color: #ddd;
+}
+.about .left .title span {
+  color: orange;
+  font-size: 4rem;
+}
+.about .left p {
+  color: #ddd;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+.about .right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c1c1c;
+}
+.about .right img {
+  border-radius: 8px;
+}
+/*# sourceMappingURL=about.css.map */

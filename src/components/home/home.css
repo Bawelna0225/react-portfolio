@@ -1,0 +1,63 @@
+.home {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://picsum.photos/id/1064/4236/2819");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+.home .welcomeSign {
+  position: absolute;
+  left: 120px;
+  bottom: 30%;
+}
+.home .welcomeSign p {
+  font-size: 4rem;
+  width: 600px;
+  color: #ddd;
+  text-shadow: 0px 0px 10px #000;
+}
+.home .welcomeSign p span {
+  color: orange;
+  text-shadow: 0px 0px 10px orange;
+}
+.home .projectsBox {
+  position: absolute;
+  width: 600px;
+  height: 200px;
+  bottom: 0px;
+  right: 0px;
+  display: flex;
+}
+.home .projectsBox a {
+  text-decoration: none;
+}
+.home .projectsBox .latestProject {
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.579);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  border-radius: 12px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #666;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.home .projectsBox .allProjects {
+  width: 50%;
+  background-color: rgba(9, 9, 9, 0.785);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #666;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,69 @@
+.contact {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #181818;
+}
+.contact form {
+  background-image: url("https://picsum.photos/id/1064/4236/2819");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  border-radius: 8px;
+  padding: 100px;
+  color: #ddd;
+  text-shadow: 0px 0px 5px #000;
+  display: flex;
+  width: min(100% - 2rem, 1200px);
+  font-size: 1.3rem;
+  flex-direction: column;
+  gap: 50px;
+}
+.contact form input, .contact form textarea {
+  background-color: rgba(33, 33, 33, 0.716);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border: none;
+  outline: none;
+  color: #ddd;
+  padding-left: 10px;
+}
+.contact form input:focus, .contact form textarea:focus {
+  border-bottom: 1px solid orange;
+}
+.contact form .doubleInput {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+}
+.contact form .doubleInput .input {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.contact form .doubleInput .input input {
+  height: 60px;
+}
+.contact form .doubleInput .input label {
+  margin-bottom: 5px;
+}
+.contact form .input {
+  width: 100%;
+}
+.contact form .input textarea {
+  width: 100%;
+  height: 400px;
+  resize: none;
+  padding-top: 10px;
+}
+.contact form button {
+  border: none;
+  padding: 15px 40px;
+  width: 150px;
+  font-size: 1.1rem;
+  background-color: orange;
+}
+/*# sourceMappingURL=contact.css.map */
