@@ -1,7 +1,7 @@
 .about {
   width: 100%;
   min-height: 100vh;
-  background-color: #1b1b1b;
+  background-color: rgb(27, 27, 27);
   display: flex;
 }
 .about .left {
@@ -31,9 +31,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1c1c1c;
+  background-color: rgb(28, 28, 28);
 }
 .about .right img {
   border-radius: 8px;
 }
-/*# sourceMappingURL=about.css.map */
+
+@media (max-width: 1250px) {
+  .about {
+    flex-direction: column;
+    gap: 50px;
+    overflow: hidden;
+  }
+  .about .left, .about .right {
+    width: 100%;
+  }
+  .about .left {
+    padding-inline: 20px;
+  }
+  .about .left .title {
+    font-size: 1.8rem;
+  }
+  .about .left .title span {
+    font-size: 2.4rem;
+  }
+  .about .left p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}/*# sourceMappingURL=about.css.map */

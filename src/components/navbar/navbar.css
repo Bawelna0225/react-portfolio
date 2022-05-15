@@ -2,13 +2,86 @@
   position: fixed;
   top: 0;
   left: 0px;
-  padding-left: 80px;
+  padding-inline: 80px;
   width: 100%;
   height: 80px;
   display: flex;
   transition: 300ms ease-in-out;
-  overflow-x: hidden;
   z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .navMenu {
+  display: flex;
+  visibility: hidden;
+  z-index: 10;
+  width: 50px;
+  height: 40px;
+  justify-content: space-between;
+  flex-direction: column;
+  position: absolute;
+  cursor: pointer;
+  right: 20px;
+}
+.navbar .navMenu.open .barTop {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+.navbar .navMenu.open .barMid {
+  transform: rotate(-45deg) translate(2px, -1px);
+}
+.navbar .navMenu.open .barBottom {
+  transform: rotate(45deg) translate(-10px, -4px);
+}
+.navbar .navMenu .barTop, .navbar .navMenu .barMid, .navbar .navMenu .barBottom {
+  transition: 100ms ease-in;
+  height: 3px;
+  background-color: #333;
+  position: absolute;
+}
+.navbar .navMenu .barTop {
+  width: 50%;
+  top: 0;
+}
+.navbar .navMenu .barMid {
+  width: 100%;
+  top: 50%;
+}
+.navbar .navMenu .barBottom {
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.navbar .sideNavMenu {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  visibility: hidden;
+  right: 0;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: 400ms ease-in;
+}
+.navbar .sideNavMenu.open {
+  transform: translateY(0%);
+  visibility: visible;
+}
+.navbar .sideNavMenu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style-type: none;
+}
+.navbar .sideNavMenu ul li {
+  font-size: 1.3rem;
+}
+.navbar .sideNavMenu ul li a {
+  color: #333;
+  text-decoration: none;
 }
 .navbar.active {
   width: 100%;
@@ -16,6 +89,10 @@
   background-color: rgba(225, 225, 225, 0.84);
   left: 0;
   height: 70px;
+}
+.navbar.active .sideNavMenu {
+  background-color: rgba(225, 225, 225, 0.84);
+  top: 70px;
 }
 .navbar.active .navItems .navItem a {
   color: #333;
@@ -49,4 +126,15 @@
   color: #666;
   text-decoration: none;
 }
-/*# sourceMappingURL=navbar.css.map */
+
+@media (max-width: 720px) {
+  .navbar .sideMenu {
+    visibility: visible;
+  }
+  .navbar .navItems {
+    visibility: hidden;
+  }
+  .navbar .navMenu {
+    visibility: visible;
+  }
+}/*# sourceMappingURL=navbar.css.map */

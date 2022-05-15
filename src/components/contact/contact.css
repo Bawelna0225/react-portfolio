@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #181818;
+  background-color: rgb(24, 24, 24);
 }
 .contact form {
   background-image: url("https://picsum.photos/id/1064/4236/2819");
@@ -66,4 +66,27 @@
   font-size: 1.1rem;
   background-color: orange;
 }
-/*# sourceMappingURL=contact.css.map */
+
+@media (max-width: 920px) {
+  .contact form .doubleInput {
+    flex-direction: column;
+  }
+  .contact form .doubleInput .input {
+    width: 100%;
+  }
+}
+@media (max-width: 620px) {
+  .contact form {
+    gap: 0px;
+    padding: 20px;
+  }
+  .contact form .doubleInput {
+    gap: 0px;
+  }
+  .contact form .doubleInput .input input {
+    height: 50px;
+  }
+  .contact form .input textarea {
+    height: 200px;
+  }
+}/*# sourceMappingURL=contact.css.map */

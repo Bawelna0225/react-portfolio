@@ -4,8 +4,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1a1a1a;
+  background-color: rgb(26, 26, 26);
   flex-direction: column;
+  overflow: hidden;
 }
 .latest p {
   color: orange;
@@ -19,7 +20,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #191919;
+  background-color: rgb(25, 25, 25);
 }
 .all p {
   color: orange;
@@ -32,7 +33,7 @@
   width: min(100% - 2rem, 900px);
   position: relative;
   border-radius: 8px;
-  box-shadow: 0px 0px 10px #0a0a0a;
+  box-shadow: 0px 0px 10px rgb(10, 10, 10);
 }
 .all .carousel-inner {
   transform: translateX(0%);
@@ -94,5 +95,4 @@
 }
 .all .right {
   right: 0;
-}
-/*# sourceMappingURL=projects.css.map */
+}/*# sourceMappingURL=projects.css.map */

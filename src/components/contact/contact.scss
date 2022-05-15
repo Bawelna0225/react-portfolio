@@ -65,3 +65,36 @@
         }
     }
 }
+@media (max-width: 920px){
+    .contact{
+      form{
+        .doubleInput{
+          flex-direction: column;
+          .input{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 620px){
+    .contact{
+      form{
+        gap: 0px;
+        padding: 20px;
+        .doubleInput{
+          gap: 0px;
+          .input{
+            input{
+              height: 50px;
+            }
+          }
+        }
+        .input{
+          textarea{
+            height: 200px;
+          }
+        }
+      }
+    }
+  }

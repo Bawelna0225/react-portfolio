@@ -9,52 +9,76 @@
     background-attachment: fixed;
     overflow-x: hidden;
     .welcomeSign{
-        position: absolute;
-        left: 120px;
-        bottom: 30%;
-        p{
-            font-size: 4rem;
-            width: 600px;
-            color: #ddd;
-            text-shadow: 0px 0px 10px #000;
-            span{
-                color: orange;
-                text-shadow: 0px 0px 10px orange;
-            }
+      position: absolute;
+      left: 120px;
+      bottom: 30%;
+      p{
+        font-size: 4rem;
+        width: 600px;
+        color: #ddd;
+        text-shadow: 0px 0px 10px #000;
+        span{
+          color: orange;
+          text-shadow: 0px 0px 10px orange;
         }
+      }
     }
     .projectsBox{
-        position: absolute;
-        width: 600px;
-        height: 200px;
+      position: absolute;
+      width: 600px;
+      height: 200px;
+      bottom: 0px;
+      right: 0px;
+      display: flex;
+      a{
+        text-decoration: none;
+      }
+      .latestProject{
+        width: 50%;
+        background-color: rgba(0, 0, 0, 0.579);
+        backdrop-filter: blur(8px);
+        border-radius: 12px 0px 0px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #666;
+        font-size: 1.3rem;
+        cursor: pointer;
+      }
+      .allProjects{
+        width: 50%;
+        background-color: rgba(9, 9, 9, 0.785);
+        backdrop-filter: blur(8px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #666;
+        font-size: 1.3rem;
+        cursor: pointer;
+      }
+    }
+  }
+  @media (max-width: 720px){
+    .home{
+      .welcomeSign{
+        left: 80px;
+        bottom: 50%;
+        p{
+          font-size: 2rem;
+          width: calc(100% - 80px);
+        }
+      }
+      .projectsBox{
+        width: 300px;
+        height: 300px;
+        flex-direction: column;
         bottom: 0px;
         right: 0px;
-        display: flex;
-        a{
-            text-decoration: none;
+        .latestProject, .allProjects{
+          width: 100%;
+          height: 50%;
+  
         }
-        .latestProject{
-            width: 50%;
-            background-color: rgba(0, 0, 0, 0.579);
-            backdrop-filter: blur(8px);
-            border-radius: 12px 0px 0px 0px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #666;
-            font-size: 1.3rem;
-            cursor: pointer;
-        }
-        .allProjects{
-            width: 50%;
-            background-color: rgba(9, 9, 9, 0.785);
-            backdrop-filter: blur(8px);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #666;
-            font-size: 1.3rem;
-            cursor: pointer;
-        }
+      }
     }
-}
+  }
